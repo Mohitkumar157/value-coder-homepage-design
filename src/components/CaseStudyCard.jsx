@@ -1,12 +1,12 @@
-function CaseStudyCard({ data }) {
+function CaseStudyCard({ data , index }) {
   console.log(data);
 
   if (!data) return null;
 
   return (
-    <article className={`w-full shadow-[0_8px_30px_rgba(0,0,0,0.08)] overflow-hidden rounded-[20px] border ${data.id === 1 ? "border-[#2563EB]" : "border-white"} bg-white p-10`}>
+    <article className={`${index === 1 && "mt-6 md:mt-0"} w-full shadow-[0_8px_30px_rgba(0,0,0,0.08)] overflow-hidden rounded-[20px] border ${data.id === 1 ? "border-[#2563EB]" : "border-white"} bg-white p-4 md:p-10`}>
       {/* Hero */}
-      <div className="flex h-65 w-full items-end justify-between gap-1 overflow-hidden rounded-[20px] bg-[#699bf3] px-6">
+      <div className="flex h-50 md:h-65 w-full items-end justify-between gap-1 overflow-hidden rounded-[20px] bg-[#699bf3] px-6">
         {/* Phone mockups */}
         {data.images.map((image, index) => (
           <div key={index} className="shadow-xl">
@@ -20,24 +20,24 @@ function CaseStudyCard({ data }) {
       </div>
 
       {/* Content */}
-      <div className="mt-7">
+      <div className=" mt-5 md:mt-7">
         {/* Category */}
         <p className="text-[14px] font-semibold uppercase tracking-[0.16em] text-[#2563EB]">
           {data.category}
         </p>
 
         {/* Title */}
-        <h2 className="mt-3 text-[22px] font-semibold leading-[1.3] tracking-[-0.02em] text-[#1C2024]">
+        <h2 className="mt-4 text-[22px] font-semibold leading-[1.3] tracking-[-0.02em] text-[#1C2024]">
           {data.title}
         </h2>
 
         {/* Description */}
-        <p className="mt-3 text-[16px] font-medium leading-[1.6] text-[#60646C]">
+        <p className="mt-4 text-[16px] font-medium leading-[1.6] text-[#60646C]">
           {data.description}
         </p>
 
         {/* Stats */}
-        <div className="my-8 border-t border-gray-200 pt-6">
+        <div className="my-5 md:my-8 border-t border-gray-200 pt-6">
           <div className="grid grid-cols-2 md:grid-cols-3 md:gap-4 gap-1">
             {data.stats.map((stat, index) => (
               <div key={index}>

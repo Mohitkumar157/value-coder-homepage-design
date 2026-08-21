@@ -23,7 +23,7 @@ function Hero() {
                     <div className="container px-4 lg:px-0">
                         <div className='grid grid-cols-1 lg:grid-cols-2 text-[#E8E8EC] mt-15'>
                             {/* LEFT-SIDE */}
-                            <div className='flex flex-col gap-5 items-start'>
+                            <div className='flex flex-col md:gap-5 gap-4 items-start'>
                                 {/* STARS */}
                                 <div className="bg-[#2563EB33] leading-4 flex items-center gap-2.5 border border-px border-[#FFFFFF33] rounded-full w-fit py-2 px-4">
                                     <div className="stars flex items-center gap-0.5">
@@ -36,7 +36,7 @@ function Hero() {
                                 </div>
                                 {/* TITLE */}
                                 <h1 className='text-[46px] md:text-[56px] lg:text-[70px] leading-[1.2] font-bold lg:leading-20 text-[#FFFFFF]'>
-                                    Vetted Engineers<br className='hidden md:block' />
+                                    Vetted Engineers<br className='hidden lg:block' />
                                     in <span className='text-[#6AA0FF]'>Your Team</span>
                                 </h1>
 
@@ -47,7 +47,7 @@ function Hero() {
                                     hiring, employment, replacements, and staffing.
                                 </p>
                                 {/* BUTTONS */}
-                                <div className='flex items-center gap-5 my-7.5'>
+                                <div className='flex items-center gap-5 my-4 md:my-7.5'>
                                     <PrimaryButton
                                         label="Talk to Us"
                                         variant="primary"
@@ -59,7 +59,8 @@ function Hero() {
                                 </div>
 
                                 {/* OUR PARTNERS */}
-                                <div className='flex items-center gap-2.5'>
+                                <div className=' w-full'>
+                                    <div className='flex items-center gap-2.5'>
                                     <div>
                                         <img src="/microsoft.png" alt="microsoft" />
                                     </div>
@@ -73,6 +74,7 @@ function Hero() {
                                         <img src="/clutch.png" alt="clutch" />
                                     </div>
                                 </div>
+                                </div>
                             </div>
 
                             {/* RIGHT-SIDE */}
@@ -83,13 +85,13 @@ function Hero() {
                                     <img
                                         src="/full-circle.png"
                                         alt="circle"
-                                        className='full-circle absolute -bottom-1 right-10.5'
+                                        className='full-circle absolute -bottom-1 right-0 md:left-[30%] lg:right-10.5'
                                     />
 
                                     <img
                                         src="/half-circle.png"
                                         alt="half-circle"
-                                        className='half-circle absolute -bottom-6.75 right-5 overflow-hidden'
+                                        className='half-circle md:left-[33%] absolute -bottom-6.75 right-0 lg:right-5 overflow-hidden'
                                     />
                                     <div className='max-w-106 max-h-130 relative overflow-hidden'>
                                         <div className='relative z-99'>
@@ -123,7 +125,7 @@ function Hero() {
                                     </div>
 
                                     {/* BOTTOM-LABEL */}
-                                    <div className='flex absolute right-[10%] -bottom-11 items-center z-100 gap-40'>
+                                    <div className='flex absolute md:left-[30%] lg:right-[10%] -bottom-11 items-center z-100 w-full md:w-fit justify-between md:gap-40'>
                                         <div className='flex flex-col gap-3'>
                                             <div className='bg-white flex items-center gap-3 py-2 px-4 rounded-sm'>
                                                 <img src="/code-quality.svg" alt="code quality image" className='object-cover' />

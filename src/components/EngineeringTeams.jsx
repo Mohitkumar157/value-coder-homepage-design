@@ -90,10 +90,10 @@ function EngineeringTeams() {
   return (
     <section className='pt-16 md:pt-20 lg:pt-24'>
       <div className="container px-4 lg:px-0">
-        <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-16'>
+        <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-16'>
           <div className="section-head">
             <SubHeading title={"Proof"} className={"text-[#2563EB]"} />
-            <h2 className='text-[#05164D] text-[46px] font-bold leading-12.5'>
+            <h2 className='text-[#05164D] text-[32px] md:text-[38px] lg:text-[46px] font-bold leading-[1.2] md:leading-12.5'>
               Engineering teams extended, shipping on their roadmap
             </h2>
           </div>
@@ -102,12 +102,11 @@ function EngineeringTeams() {
             and continued beyond the initial three months.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-16">
-          {caseStudies.map((card) => (
-            <CaseStudyCard data={card} key={card.id} />
+        <div className="grid grid-cols-1 lg:grid-cols-2  lg:gap-x-6 lg:gap-y-0 mt-6 md:mt-16">
+          {caseStudies.map((card , i) => (
+            <CaseStudyCard data={card} key={card.id} index = {i}/>
           ))}
-          <div><CaseStudyCard /></div>
-          <div><CaseStudyCard /></div>
+          
         </div>
       </div>
     </section>

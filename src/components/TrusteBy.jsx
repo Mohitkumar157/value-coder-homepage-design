@@ -68,7 +68,7 @@ function TrusteBy() {
           {/* LEFT */}
           <div>
             <SubHeading title={"The engagement"} className="text-[#2563EB]" />
-            <h2 className='text-[#05164D] text-[36px] md:text-[46px] font-bold leading-[1.2] md:leading-12.5'>
+            <h2 className='text-[#05164D] text-[32px] md:text-[38px] lg:text-[46px] font-bold leading-[1.2] md:leading-12.5'>
               You need engineers who fit into your team, not another team to manage.
             </h2>
             <p className='text-[#60646C] text-[18px] font-medium mt-5'>

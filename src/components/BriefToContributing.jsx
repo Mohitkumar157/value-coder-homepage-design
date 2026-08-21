@@ -48,10 +48,10 @@ function BriefToContributing() {
     return (
         <section>
             <div className="container px-4 lg:px-0 pb-16 md:pb-20 lg:pb-24">
-                <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-16'>
+                <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-16'>
                     <div className="section-head">
                         <SubHeading title={"Onboarding to ongoing"} className={"text-[#2563EB]"} />
-                        <h2 className='text-[#05164D] text-[46px] font-bold leading-12.5'>
+                        <h2 className='text-[#05164D] text-[32px] md:text-[38px] lg:text-[46px] font-bold leading-[1.2] md:leading-12.5'>
                             From brief to contributing engineer in five working days
                         </h2>
                     </div>
@@ -62,9 +62,9 @@ function BriefToContributing() {
                 </div>
 
                 {/* Timeline Grid */}
-                <div className="grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-3 mt-16 overflow-hidden">
+                <div className="grid grid-cols-1 gap-4 md:gap-15 md:grid-cols-2 lg:grid-cols-3 md:mt-16 mt-6 overflow-hidden">
                     {timelineData.map((item, index) => (
-                        <div key={item.number} className="relative">
+                        <div key={item.number} className="relative border border-[#6AA0FF80] rounded-xl p-4 md:p-0 md:border-0">
                             {/* Top Label */}
                             <div className="mb-5">
                                 <span className="text-[14px] font-semibold uppercase tracking-[0.02em] text-[#80838D]">

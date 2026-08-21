@@ -33,11 +33,11 @@ const comparisonData = [
 
 export default function ComparisonTable() {
     return (
-        <section className="w-full bg-white mt-16">
-            <div className="container">
+        <section className="w-full bg-white mt-6 md:mt-16">
+            <div className=" w-full">
                 {/* Table wrapper */}
-                <div className="relative w-full overflow-x-scroll lg:overflow-x-hidden rounded-[18px] shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
-                    <div className="rounded-[18px] w-full">
+                <div className="relative overflow-x-scroll lg:overflow-x-hidden rounded-[18px] shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
+                    <div className="rounded-[18px] w-310">
                         {/* Header */}
                         <div className="grid grid-cols-4 bg-[#f4f4f6]">
                             <div className="flex items-center p-6.25 w-full">

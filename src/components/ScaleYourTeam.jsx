@@ -8,22 +8,22 @@ function ScaleYourTeam() {
 
             <div className='container px-4 lg:px-0'>
                 <div className=" flex flex-col md:flex-row items-center justify-between">
-                    <div className='flex flex-col gap-1 '>
-                        <h2 className='text-white text-[32px] font-bold leading-12.5'>
+                    <div className='flex flex-col gap-4 '>
+                        <h2 className='text-white text-[32px] md:text-[38px] lg:text-[46px] font-bold leading-[1.2] md:leading-12.5'>
                             Scale Your Team, Not Your Hiring.
                         </h2>
                         <p className='text-[#D9D9E0] font-medium leading-[160%]'>
                             675+ in-house engineers across Java, Python, React, Node.js, Data Engineering.
                         </p>
 
-                        <div className='flex items-center gap-4 mt-5 mb-3'>
+                        <div className='flex items-center gap-4 mt-0 lg:mt-5 mb-4'>
                             <PrimaryButton label={"Talk to Us"} variant={"primary"} />
                             <PrimaryButton label={"Book a Call"} variant={"secondary"} />
                         </div>
                     </div>
-                    <div>
+                    <div className='w-full md:w-fit'>
                         <div className='flex flex-col items-start gap-4'>
-                            <div className='flex items-center gap-4'>
+                            <div className='flex items-center w-full md:w-fit gap-4'>
 
 
 
@@ -31,7 +31,7 @@ function ScaleYourTeam() {
 
                                 {/* <!-- Card --> */}
                                 <div
-                                    class="relative overflow-hidden rounded-xl
+                                    class="relative w-full md:w-fit overflow-hidden rounded-xl
            border border-[#6AA0FF80]
            bg-[#071B5E]
            px-5 py-4
@@ -57,7 +57,7 @@ function ScaleYourTeam() {
                                 </div>
                                 {/* <!-- Card --> */}
                                 <div
-                                    class="relative overflow-hidden z-50 rounded-xl
+                                    class="relative w-full md:w-fit overflow-hidden z-50 rounded-xl
            border border-[#6AA0FF80]
            bg-[#071B5E]
            px-5 py-4
