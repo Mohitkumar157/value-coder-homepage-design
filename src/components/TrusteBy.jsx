@@ -53,10 +53,10 @@ function TrusteBy() {
           <div className='w-81 bg-[#F0F0F3] h-px rounded-full hidden lg:block'></div>
         </div>
 
-        <div className='hidden md:block'>
-          <div className='flex items-center justify-between flex-wrap'>
+        <div className=''>
+          <div className='grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-9 md:gap-6'>
             {trustedCompanies.map((comp) => (
-              <div key={comp.alt}>
+              <div className='flex justify-center md:justify-start items-center' key={comp.alt}>
                 <img src={comp.src} alt={comp.alt} className='w-auto h-auto object-cover' />
               </div>
             ))}

@@ -21,7 +21,7 @@ function Hero() {
                 </div>
                 <div className="hero-content relative z-50 flex flex-col justify-between">
                     <div className="container px-4 lg:px-0">
-                        <div className='grid grid-cols-1 lg:grid-cols-2 text-[#E8E8EC] mt-15'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 text-[#E8E8EC] mt-35 lg:mt-15'>
                             {/* LEFT-SIDE */}
                             <div className='flex flex-col md:gap-5 gap-4 items-start'>
                                 {/* STARS */}

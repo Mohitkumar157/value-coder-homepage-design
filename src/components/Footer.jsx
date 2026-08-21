@@ -124,7 +124,7 @@ const footerLinks = [
 function Footer() {
   return (
     <footer className="w-full bg-[#1d2023] text-white">
-      <div className="container py-16">
+      <div className="container px-4 lg:px-0 py-16 md:py-20 lg:py-24">
 
         {/* ================= LOCATIONS ================= */}
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
@@ -202,7 +202,7 @@ function Footer() {
 
                  <div className="flex items-center gap-2.5">
                   {socialIcons.map((icon)=>(
-                    <img src={icon.src} alt={icon.alt} className="w-full h-auto object-cover"/>
+                    <img src={icon.src} alt={icon.alt} key={icon.alt} className="w-full h-auto object-cover"/>
                   ))}
                  </div>
                 </div>

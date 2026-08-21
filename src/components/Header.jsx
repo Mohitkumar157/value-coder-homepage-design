@@ -3,8 +3,10 @@ import Nav from './Nav';
 import SearchBar from './SearchBar';
 import EstimateButton from './EstimateButton';
 import { Link } from 'react-router-dom';
+import Hamburger from './Hamburger';
 function Header() {
   return (
+    <>
     <header className='bg-[#05164D] py-5! hidden lg:block'>
       <div className='relative z-10 container flex justify-between items-center'>
         <Link to={"/"} className="logo w-55">
@@ -17,6 +19,8 @@ function Header() {
         </div>
       </div>
     </header>
+    <Hamburger />
+    </>
   )
 }
 

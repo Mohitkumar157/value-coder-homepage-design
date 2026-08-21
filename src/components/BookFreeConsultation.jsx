@@ -1,5 +1,6 @@
 
 
+
 const stats = [
   {
     title: "21+ years of experience",
@@ -30,13 +31,14 @@ const partners = [
 ];
 
 export default function BookFreeConsultation() {
+
   return (
     <section className=" bg-white text-[#202124]">
       <div className="mx-auto flex w-full flex-col lg:flex-row">
 
         {/* ================= LEFT SIDE ================= */}
         <aside className="w-full md:w-[40%] bg-[#f1f1f3] py-16 md:py-20 lg:py-24 flex justify-center items-center">
-          <div className="mx-auto max-w-97.5">
+          <div className="px-4 lg:py-0 lg:max-w-97.5">
 
             {/* Contact Links */}
             <div className="mb-8 flex flex-wrap items-center font-medium gap-x-3 gap-y-2 text-[14px] text-[#1C2024]">
@@ -104,13 +106,13 @@ export default function BookFreeConsultation() {
         </aside>
 
         {/* ================= RIGHT SIDE ================= */}
-        <main className="w-full md:w-[60%] bg-white px-10 py-16 md:py-20 lg:py-24">
+        <main className="w-full md:w-[60%] bg-white px-4 md:px-10 py-16 md:py-20 lg:py-24">
           <div className="">
 
             {/* Heading */}
             <div className="mb-12">
-              <h2 className="text-[#1C2024] text-[46px] font-bold leading-12.5">
-               Book Free Consultation
+              <h2 className="text-[#1C2024] text-[32px] md:text-[38px] lg:text-[46px] font-bold leading-[1.2] md:leading-12.5">
+                Book Free Consultation
               </h2>
 
               <p className="mt-3 text-[18px] leading-7 text-[#60646C]">
@@ -127,6 +129,7 @@ export default function BookFreeConsultation() {
                   label="Full Name"
                   placeholder="Enter Your Name"
                   type="text"
+                  
                 />
 
                 <FloatingInput
@@ -194,7 +197,7 @@ export default function BookFreeConsultation() {
 
                 <button
                   type="button"
-                  className="absolute bottom-3 left-4 rounded-sm border border-[#d9dbe0] bg-white px-2.5 py-1 text-[12px] text-[#777b85] hover:bg-[#f6f6f7]"
+                  className="absolute bottom-4 left-4 rounded-sm border border-[#d9dbe0] bg-white px-2.5 py-1 text-[12px] text-[#777b85] hover:bg-[#f6f6f7]"
                 >
                   Browse | Drop Files Here
                 </button>
@@ -265,6 +268,7 @@ function FloatingInput({ label, placeholder, type }) {
 
       <input
         type={type}
+        autoFocus={type === "text"}
         placeholder={placeholder}
         className="h-13.5 w-full rounded-[5px] border border-[#e3e4e8] bg-white px-4 text-[16px] text-[#27282b] outline-none placeholder:text-[#8b8f98] transition focus:border-[#202124] focus:ring-1 focus:ring-[#202124]"
       />

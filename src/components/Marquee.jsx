@@ -36,7 +36,7 @@ export default function Marquee() {
         <FeatureSet />
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes marquee {
           from {
             transform: translate3d(0, 0, 0);
